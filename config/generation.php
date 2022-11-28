@@ -29,6 +29,8 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet, SplFi
             ];
             $svgLine = preg_replace(array_keys($replacePattern), array_values($replacePattern), $svgLine);
             $svgLine = str_replace(':#333333;', ':currentColor;', $svgLine);
+            $svgLine = str_replace('#666666', 'currentColor', $svgLine);
+            $svgLine = str_replace('#ffffff', 'fillColor', $svgLine);
             // $svgLine = str_replace('stroke:#666666;', 'stroke:currentColor;', $svgLine);
             // $svgLine = str_replace('fill:#333333;', 'stroke:currentColor;', $svgLine);
             return $svgLine;

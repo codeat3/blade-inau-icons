@@ -50,19 +50,19 @@ php artisan vendor:publish --tag=blade-inau-icons-config
 Icons can be used as self-closing Blade components which will be compiled to SVG icons:
 
 ```blade
-<x-inau-menu-2-menu-2/>
+<x-inau-menu-2/>
 ```
 
 You can also pass classes to your icon components:
 
 ```blade
-<x-inau-menu-2-menu-2 class="w-6 h-6 text-gray-500"/>
+<x-inau-menu-2 class="w-6 h-6 text-gray-500"/>
 ```
 
 And even use inline styles:
 
 ```blade
-<x-inau-menu-2-menu-2 style="color: #555"/>
+<x-inau-menu-2 style="color: #555"/>
 ```
 
 ### Raw SVG Icons
